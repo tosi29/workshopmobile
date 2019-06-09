@@ -5,13 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * プラン
+ * エンタメフリーオプション
  */
 @AllArgsConstructor
-public enum Plan {
-    _1ギガ(new MonthlyFee(1000)),
-    _3ギガ(new MonthlyFee(2000)),
-    _30ギガ(new MonthlyFee(6000));
+public enum EntameFreeOption {
+    エンタメフリーなし(new MonthlyFee(0)),
+    エンタメフリーあり(new MonthlyFee(1200));
 
     @Getter
     private final MonthlyFee monthlyFee;

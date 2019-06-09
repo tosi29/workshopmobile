@@ -10,4 +10,8 @@ import lombok.Getter;
 public class MonthlyFee {
     @Getter
     private final int value;
+
+    public MonthlyFee add(MonthlyFee arg) {
+        return new MonthlyFee(value + arg.value);
+    }
 }
